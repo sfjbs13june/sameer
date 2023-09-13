@@ -17,7 +17,7 @@ public class PatientController {
     }
 
     @GetMapping("/read")
-    public Patient readePatient(@RequestParam("name") String name){
+    public Patient readPatient(@RequestParam("name") String name){
         return patientMap.get(name);
     }
 

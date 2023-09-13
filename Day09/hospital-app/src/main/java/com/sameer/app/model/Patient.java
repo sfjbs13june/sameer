@@ -7,16 +7,16 @@ public class Patient {
 
 
     String name;
-    int id;
+    int age;
     String hospitalName;
     String disease;
 
     public Patient(){}
 
-    public Patient(String name, int id, String hospitalname, String disease) {
+    public Patient(String name, int id, String hospitalName, String disease) {
         this.name = name;
-        this.id = id;
-        this.hospitalname = hospitalname;
+        this.age = age;
+        this.hospitalName = hospitalName;
         this.disease = disease;
     }
 
@@ -24,12 +24,12 @@ public class Patient {
         return name;
     }
 
-    public int getId() {
-        return id;
+    public int getAge() {
+        return age;
     }
 
-    public String getHospitalname() {
-        return hospitalname;
+    public String getHospitalName() {
+        return hospitalName;
     }
 
     public String getDisease() {
@@ -40,8 +40,8 @@ public class Patient {
         this.name = name;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public void setHospitalName(String hospitalName) {

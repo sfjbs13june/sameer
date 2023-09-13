@@ -25,7 +25,7 @@ public class HospitalController {
     @PutMapping("/update")
     public Hospital updateHospital(@RequestParam("hospitalName") String hospitalName,@RequestParam("hospitalName") int id){
         Hospital hospital= hospitalMap.get(hospitalName);
-        Hospital.setId(id);
+        Hospital.setAge(id);
         hospitalMap.put(hospitalName,hospital);
         return hospitalName;
     }
