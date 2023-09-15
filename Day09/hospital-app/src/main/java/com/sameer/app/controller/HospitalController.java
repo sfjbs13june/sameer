@@ -18,16 +18,16 @@ public class HospitalController {
     }
 
     @GetMapping("/read")
-    public Hospital readeHospital(@RequestParam("hospitalName") String hospitalName){
+    public Hospital readHospital(@RequestParam("hospitalName") String hospitalName){
         return hospitalMap.get(hospitalName);
     }
 
     @PutMapping("/update")
-    public Hospital updateHospital(@RequestParam("hospitalName") String hospitalName,@RequestParam("hospitalName") int id){
+    public Hospital updateHospital(@RequestParam("hospitalName") String hospitalName, @RequestParam("Id") int id){
         Hospital hospital= hospitalMap.get(hospitalName);
-        Hospital.setAge(id);
+        hospital.setId(id);
         hospitalMap.put(hospitalName,hospital);
-        return hospitalName;
+        return hospital;
     }
 
     @DeleteMapping("/delete")
@@ -36,7 +36,7 @@ public class HospitalController {
     }
 
     @GetMapping("/read/{name}")
-    public Hospital ReadNameHospital(@PathVariable String hospitalName){
+    public Hospital readHospitalName(@PathVariable String hospitalName){
         return hospitalMap.get(hospitalName);
     }
 

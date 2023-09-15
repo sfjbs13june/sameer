@@ -13,7 +13,7 @@ public class Patient {
 
     public Patient(){}
 
-    public Patient(String name, int id, String hospitalName, String disease) {
+    public Patient(String name, int age, String hospitalName, String disease) {
         this.name = name;
         this.age = age;
         this.hospitalName = hospitalName;
