@@ -1,0 +1,6 @@
+version: '3'
+services:
+  mysqldb:
+    image: mysql:latest
+    ports:
+      - "27017:27017"
