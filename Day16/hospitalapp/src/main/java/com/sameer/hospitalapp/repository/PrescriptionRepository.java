@@ -16,7 +16,7 @@ public class PrescriptionRepository {
 
     }
 
-    public static void savePrescription(String name){
+    public  void savePrescription(String name){
         prescriptionMap.put(name,prescription);
     }
 }
