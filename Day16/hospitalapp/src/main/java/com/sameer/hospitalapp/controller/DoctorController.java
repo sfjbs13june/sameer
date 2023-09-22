@@ -14,7 +14,8 @@ import java.util.Map;
 
 public class DoctorController {
 
-        @Autowired
+
+    @Autowired
         AppointmentRepository appointmentRepository;
 
         @GetMapping("/doctorappointment")

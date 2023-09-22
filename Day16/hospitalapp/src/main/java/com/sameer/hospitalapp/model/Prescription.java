@@ -1,6 +1,8 @@
 package com.sameer.hospitalapp.model;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class Prescription {
 
     String prescriptionId;
@@ -55,7 +57,7 @@ public class Prescription {
         return description;
     }
 
-    public void setdescription(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 

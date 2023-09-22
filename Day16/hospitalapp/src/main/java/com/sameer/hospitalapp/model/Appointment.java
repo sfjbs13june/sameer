@@ -1,23 +1,22 @@
 package com.sameer.hospitalapp.model;
 
 import org.springframework.stereotype.Component;
-
 import java.util.Date;
+
 @Component
 public class Appointment {
-
     String appointmentId;
     String patientName;
     String doctorName;
-    Date date;
+    String date;
     String prescription;
-
     public Appointment() {
     }
-    public Appointment(String appointmentId, String patientName, String doctorName, Date date, String prescription) {
+    public Appointment(String appointmentId, String patientName, String doctorName, String date, String prescription) {
         this.appointmentId = appointmentId;
         this.patientName = patientName;
         this.doctorName = doctorName;
+        this.date = date;
         this.prescription = prescription;
     }
     public String getAppointmentId() {
@@ -44,11 +43,11 @@ public class Appointment {
         this.doctorName = doctorName;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
